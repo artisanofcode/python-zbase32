@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v3
 
     - name: install hunspell-en-gb
       run: sudo apt-get install -y hunspell-en-gb

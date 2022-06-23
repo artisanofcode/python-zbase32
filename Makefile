@@ -1,32 +1,53 @@
+.DEFAULT_GOAL = help
+
 bootstrap:
 	poetry install
-	poetry run pre-commit install --install-hooks
 
+#: build the projects output files
+build: update
+	poetry build
+
+#: run continuous integration tasks
 ci:
-	poetry run black --check src tests
-	poetry run flake8 --max-line-length 88 --ignore E203
-	poetry run mypy src tests
-	poetry run pylint src tests
-	poetry run pytest -Werror --tb=short --cov=zbase32 --cov-branch --cov-report=term-missing:skip-covered --cov-fail-under=100
+	poetry run isort --check-only .
+	poetry run black --check .
+	HYPOTHESIS_PROFILE=slow poetry run pytest -vvv --mypy --pylint --pydocstyle --cov --typeguard-packages=zbase32,tests src tests
 
+clean:`
+	rm -rf .mypy_cache/ .pytest_cache/ .coverage dist
+
+#: open a repl console
 console:
 	poetry run python
 
-format:
-	poetry run shed --py39-plus --refactor src/**/*.py tests/*.py README.md
+docs: update
+	exit
 
+#: format all source files
+format:
+	poetry run shed --refactor --py39-plus src/*.py tests/*.py
+
+#: list avalible make targets
+help:
+	@grep -B1 -E "^[a-zA-Z0-9_-]+\:([^\=]|$$)" Makefile \
+		| grep -v -- -- \
+		| sed 'N;s/\n/###/' \
+		| sed -n 's/^#: \(.*\)###\(.*\):.*/make \2###    \1/p' \
+		| column -t  -s '###' \
+		| sort
+
+#: run project server locally
 server: update
 	exit
-	
+
+#: setup the project after a `git clone`
 setup: bootstrap
 
+#: run the projects test suite
 test:
-	poetry run black --check src tests
-	poetry run flake8 --max-line-length 88 --ignore E203
-	poetry run mypy src tests
-	poetry run pylint src tests
-	poetry run pytest -Werror --tb=short --cov=zbase32 --cov-branch --cov-report=term-missing:skip-covered --cov-fail-under=100
+	poetry run pytest -vvv --mypy --pylint --pydocstyle --cov --cov-report term-missing --typeguard-packages=zbase32,tests src tests
 
+#: update the project after a `git pull`
 update: bootstrap
 
-.PHONY: bootstrap ci console format server setup test update
+.PHONY: bootstrap build ci clean console docs format help server setup test update

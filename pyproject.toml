@@ -4,7 +4,7 @@ version = "0.1.1"
 description = "A human-oriented base-32 encoding."
 authors = ["Daniel Knell <contact@danielknell.co.uk>"]
 packages = [
-    {include = "zbase32", from = "src"}
+    {include = "zbase32.py", from = "src"}
 ]
 readme = "README.md"
 license = "MIT"
@@ -15,16 +15,90 @@ repository = "https://github.com/artisanofcode/python-zbase32"
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.5"
-hypothesis = "^6.23.4"
-pre-commit = "^2.15.0"
-shed = "^0.5.3"
-mypy = "^0.910"
-pylint = "^2.11.1"
-flake8 = "^4.0.1"
+shed = "^0.9.5"
+pylint = "^2.13.7"
+mypy = "^0.942"
+pytest = "^7.1.1"
 pytest-cov = "^3.0.0"
-pytest-xdist = "^2.4.0"
+typeguard = "^2.13.3"
+docformatter = "^1.4"
+pytest-pylint = "^0.18.0"
+pytest-mypy = "^0.9.1"
+pydocstyle = "^6.1.1"
+pytest-pydocstyle = "^2.3.0"
+pyenchant = "^3.2.2"
+hypothesis = "^6.47.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+known_localfolder = ['tests']
+
+[tool.pylint.master]
+load-plugins = [
+    "pylint.extensions.bad_builtin",
+    "pylint.extensions.mccabe",
+    "pylint.extensions.docstyle",
+    "pylint.extensions.check_elif",
+    "pylint.extensions.eq_without_hash",
+    "pylint.extensions.private_import",
+    "pylint.extensions.redefined_variable_type",
+    "pylint.extensions.overlapping_exceptions",
+    "pylint.extensions.docparams",
+    "pylint.extensions.empty_comment",
+    "pylint.extensions.set_membership",
+    "pylint.extensions.typing",
+    "pylint.extensions.while_used",
+]
+
+[tool.pylint.basic]
+good-names = ["i", "j", "k", "ex", "Run", "_", "to"]
+
+[tool.pylint.messages_control]
+disable = [
+    "docstring-first-line-empty",
+]
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pylint.spelling]
+spelling-dict = "en_GB"
+spelling-private-dict-file = ".dictionary"
+
+[tool.pylint.similarities]
+ignore-signatures = true
+ignore-imports = true
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+filterwarnings = [
+    "error",
+    "ignore::pytest.PytestRemovedIn8Warning",
+    "ignore::DeprecationWarning:pylint.*"
+]
+
+[tool.pylint.parameter_documentation]
+default-docstring-type = "sphinx"
+
+[tool.mypy]
+strict = true
+
+[tool.pydocstyle]
+add-ignore = [
+    "D102",
+    "D105",
+    "D107",
+    "D200",
+    "D212",
+]
+
+[tool.coverage.run]
+omit = [
+    "*/site-packages/*",
+]

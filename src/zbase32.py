@@ -1,12 +1,9 @@
 """
-zbase32
-~~~~~~~
-
-A human-oriented base-32 encoding.
+zbase32 - A human-oriented base-32 encoding.
 """
 
+import collections.abc
 import math
-import typing
 
 __all__ = (
     "decode",
@@ -18,12 +15,16 @@ _ALPHABET = b"ybndrfg8ejkmcpqxot1uwisza345h769"
 _INVERSE_ALPHABET = {key: value for value, key in enumerate(_ALPHABET)}
 
 
-def _chunks(buffer: bytearray, size: int) -> typing.Generator[bytearray, None, None]:
+def _chunks(
+    buffer: bytearray,
+    size: int,
+) -> collections.abc.Generator[bytearray, None, None]:
     """
-    chunks
+    chunks.
 
     :param buffer: the buffer to chunk
     :param size: the size of each chunk
+
     :return: an iterable of chunks
     """
     for i in range(0, len(buffer), size):
@@ -32,9 +33,10 @@ def _chunks(buffer: bytearray, size: int) -> typing.Generator[bytearray, None, N
 
 def decode(string: str) -> bytes:
     """
-    zbase32 decode
+    zbase32 decode.
 
     :param string: a zbase32 encoded string
+
     :return: decoded bytes
 
     :raises DecodeError: invalid zbase32 encoded string
@@ -67,9 +69,10 @@ def decode(string: str) -> bytes:
 
 def encode(data: bytes) -> str:
     """
-    zbase32 encode
+    zbase32 encode.
 
     :param data: bytes to encode
+
     :return: a zbase32 encoded string
     """
     assert isinstance(data, bytes)
@@ -98,5 +101,5 @@ def encode(data: bytes) -> str:
 
 class DecodeError(RuntimeError):
     """
-    zbase32 string cannot be decoded
+    zbase32 string cannot be decoded.
     """

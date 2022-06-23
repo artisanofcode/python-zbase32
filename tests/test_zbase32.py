@@ -1,5 +1,5 @@
 """
-test zbase32
+Tests for :mod:`zbase32`.
 """
 
 import hypothesis
@@ -27,19 +27,25 @@ import zbase32
         ),
     ],
 )
-def test_it_should_support_encoding_and_decoding(decoded, encoded) -> None:
-    """it should support encoding and decoding."""
+def test_it_should_support_encoding_and_decoding(decoded: bytes, encoded: str) -> None:
+    """
+    it should support encoding and decoding.
+    """
     assert zbase32.encode(decoded) == encoded
     assert zbase32.decode(encoded) == decoded
 
 
 def test_it_should_error_on_invalid_zbase32_strings() -> None:
-    """it should error on invalid zbase32 strings."""
+    """
+    it should error on invalid zbase32 strings.
+    """
     with pytest.raises(zbase32.DecodeError):
         zbase32.decode("bar#")
 
 
 @hypothesis.given(value=hypothesis.strategies.binary())
 def test_it_should_be_able_to_decode_encoded_values(value: bytes) -> None:
-    """it should be able to decode encoded values."""
+    """
+    it should be able to decode encoded values.
+    """
     assert zbase32.decode(zbase32.encode(value)) == value

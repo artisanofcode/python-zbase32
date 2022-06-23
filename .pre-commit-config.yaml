@@ -4,5 +4,5 @@ repos:
   rev: 0.4.2
   hooks:
     - id: shed
-      args: [--refactor, --py39-plus]
+      args: [--refactor, --py310-plus]
       types_or: [python, markdown, rst]

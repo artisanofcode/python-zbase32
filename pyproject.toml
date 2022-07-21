@@ -27,7 +27,7 @@ pytest-mypy = "^0.9.1"
 pydocstyle = "^6.1.1"
 pytest-pydocstyle = "^2.3.0"
 pyenchant = "^3.2.2"
-hypothesis = "^6.50.1"
+hypothesis = "^6.52.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

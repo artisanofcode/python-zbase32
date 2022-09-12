@@ -438,11 +438,11 @@ tests = ["pytest-isort", "pytest-pycodestyle (>=2.3,<3.0)"]
 
 [[package]]
 name = "pytest-pylint"
-version = "0.18.0"
+version = "0.19.0"
 description = "pytest plugin to check source code with pylint"
 category = "dev"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.7"
 
 [package.dependencies]
 pylint = ">=2.3.0"
@@ -583,7 +583,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "adb46bd7e685abe92b2bc2a99a6ca33c7aade7577278d21159557cc75f74369e"
+content-hash = "4cf1a694ce527848238e41935a365ffc88d383cc513fd04c47419e14790385b1"
 
 [metadata.files]
 astroid = [
@@ -870,8 +870,8 @@ pytest-pydocstyle = [
     {file = "pytest-pydocstyle-2.3.0.tar.gz", hash = "sha256:1f2d937349cfeb4965c530a0c0f2442b48c03299558db435b65549719510d32b"},
 ]
 pytest-pylint = [
-    {file = "pytest-pylint-0.18.0.tar.gz", hash = "sha256:790c7a8019fab08e59bd3812db1657a01995a975af8b1c6ce95b9aa39d61da27"},
-    {file = "pytest_pylint-0.18.0-py3-none-any.whl", hash = "sha256:b63aaf8b80ff33c8ceaa7f68323ed04102c7790093ccf6bdb261a4c2dc6fd564"},
+    {file = "pytest-pylint-0.19.0.tar.gz", hash = "sha256:d88e83c1023c641548a9ec3567707ceee7616632a986af133426d4a74d066932"},
+    {file = "pytest_pylint-0.19.0-py3-none-any.whl", hash = "sha256:b51d3f93bed9c192e2b046f16520981bee5abe7bd61b070306e7ee685219fdd3"},
 ]
 pyupgrade = [
     {file = "pyupgrade-2.37.3-py2.py3-none-any.whl", hash = "sha256:9746efd064dbf53d7f86d6f88a1d48120f58dbfc378f517768634740ea2225e2"},

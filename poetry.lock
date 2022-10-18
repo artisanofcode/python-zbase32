@@ -451,7 +451,7 @@ toml = ">=0.7.1"
 
 [[package]]
 name = "pyupgrade"
-version = "2.37.3"
+version = "3.1.0"
 description = "A tool to automatically upgrade syntax for newer versions."
 category = "dev"
 optional = false
@@ -470,7 +470,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "shed"
-version = "0.10.3"
+version = "0.10.5"
 description = "`shed` canonicalises Python code."
 category = "dev"
 optional = false
@@ -482,7 +482,7 @@ black = ">=22.8.0"
 com2ann = {version = ">=0.3.0", markers = "python_version >= \"3.8\""}
 isort = ">=5.10.1"
 libcst = ">=0.4.7"
-pyupgrade = ">=2.37.0"
+pyupgrade = ">=3.0.0"
 
 [[package]]
 name = "snowballstemmer"
@@ -583,7 +583,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "0fb1f093a6109c288867937a7514a6807b182900d33d6f5c91bac74eef190030"
+content-hash = "a2d94ef1b15a6c0c1e8c523bde618f3d2045f8a7b8ac63798f095b001c25c740"
 
 [metadata.files]
 astroid = [
@@ -874,8 +874,8 @@ pytest-pylint = [
     {file = "pytest_pylint-0.19.0-py3-none-any.whl", hash = "sha256:b51d3f93bed9c192e2b046f16520981bee5abe7bd61b070306e7ee685219fdd3"},
 ]
 pyupgrade = [
-    {file = "pyupgrade-2.37.3-py2.py3-none-any.whl", hash = "sha256:9746efd064dbf53d7f86d6f88a1d48120f58dbfc378f517768634740ea2225e2"},
-    {file = "pyupgrade-2.37.3.tar.gz", hash = "sha256:1414c7a7c558004cf610e6180716b876814b639b5a5789c3da023c5cdaebcd49"},
+    {file = "pyupgrade-3.1.0-py2.py3-none-any.whl", hash = "sha256:77c6101a710be3e24804891e43388cedbee617258e93b09c8c5e58de08617758"},
+    {file = "pyupgrade-3.1.0.tar.gz", hash = "sha256:7a8d393d85e15e0e2753e90b7b2e173b9d29dfd71e61f93d93e985b242627ed3"},
 ]
 pyyaml = [
     {file = "PyYAML-6.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:d4db7c7aef085872ef65a8fd7d6d09a14ae91f691dec3e87ee5ee0539d516f53"},
@@ -920,8 +920,8 @@ pyyaml = [
     {file = "PyYAML-6.0.tar.gz", hash = "sha256:68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"},
 ]
 shed = [
-    {file = "shed-0.10.3-py3-none-any.whl", hash = "sha256:dfbda559899355cf4e8519cd0b5cfd6a6670f819a20d13dda4ffc2d1efe58a34"},
-    {file = "shed-0.10.3.tar.gz", hash = "sha256:cbc695d83917467c12cde2ed85c2d948158da7d05d00c7e19aa75eb691b18bbd"},
+    {file = "shed-0.10.5-py3-none-any.whl", hash = "sha256:134c9ed91752a4c61211e0df173756edf3b85dfe1f9d22bf28a9987d005acdac"},
+    {file = "shed-0.10.5.tar.gz", hash = "sha256:c9010ed93a0f529592f50c07e4a43b6238ed32674131ee1bb294c81fae3014b1"},
 ]
 snowballstemmer = [
     {file = "snowballstemmer-2.2.0-py2.py3-none-any.whl", hash = "sha256:c8e1716e83cc398ae16824e5572ae04e0d9fc2c6b985fb0f900f5f0c96ecba1a"},

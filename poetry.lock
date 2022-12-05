@@ -402,7 +402,7 @@ testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtuale
 
 [[package]]
 name = "pytest-mypy"
-version = "0.10.1"
+version = "0.10.2"
 description = "Mypy static type checker plugin for Pytest"
 category = "dev"
 optional = false
@@ -579,7 +579,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "cc4c38e0c16daa1bf10d528ea2f6b91564fb779be1373e5f69ed18166964ee13"
+content-hash = "bf3d563fcf0048eef326df6aa7f2cbdf768ffcf39a9094fb05a74bf08cea3760"
 
 [metadata.files]
 astroid = [
@@ -862,8 +862,8 @@ pytest-cov = [
     {file = "pytest_cov-4.0.0-py3-none-any.whl", hash = "sha256:2feb1b751d66a8bd934e5edfa2e961d11309dc37b73b0eabe73b5945fee20f6b"},
 ]
 pytest-mypy = [
-    {file = "pytest-mypy-0.10.1.tar.gz", hash = "sha256:7fe68837449334553e224cc86c6dc1b938772399abb64f510a864fb209593a94"},
-    {file = "pytest_mypy-0.10.1-py3-none-any.whl", hash = "sha256:ecf541a28df9e5f992936a1613bee231957df2d40efa662cd7c52ace2e64f43f"},
+    {file = "pytest-mypy-0.10.2.tar.gz", hash = "sha256:efc89a9f54976995a39b98fd3672ccf958d03de8463dad0261aecc166a308b96"},
+    {file = "pytest_mypy-0.10.2-py3-none-any.whl", hash = "sha256:486a2b2ca1ebd15794b74f14e7b1bf550ecb23c670dc62df5b25ed98d5c47de4"},
 ]
 pytest-pydocstyle = [
     {file = "pytest-pydocstyle-2.3.1.tar.gz", hash = "sha256:58228aef833dc4ed0a3a3216ebc8586f9798c7d0a98832eaf70a17269f773d4e"},

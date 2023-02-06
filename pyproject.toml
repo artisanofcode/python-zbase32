@@ -15,7 +15,7 @@ repository = "https://github.com/artisanofcode/python-zbase32"
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
-shed = "^0.10.7"
+shed = "^0.10.9"
 pylint = "^2.15.6"
 mypy = "^0.991"
 pytest = "^7.2.0"

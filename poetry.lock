@@ -668,14 +668,14 @@ testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtuale
 
 [[package]]
 name = "pytest-mypy"
-version = "0.10.1"
+version = "0.10.3"
 description = "Mypy static type checker plugin for Pytest"
 category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "pytest-mypy-0.10.1.tar.gz", hash = "sha256:7fe68837449334553e224cc86c6dc1b938772399abb64f510a864fb209593a94"},
-    {file = "pytest_mypy-0.10.1-py3-none-any.whl", hash = "sha256:ecf541a28df9e5f992936a1613bee231957df2d40efa662cd7c52ace2e64f43f"},
+    {file = "pytest-mypy-0.10.3.tar.gz", hash = "sha256:f8458f642323f13a2ca3e2e61509f7767966b527b4d8adccd5032c3e7b4fd3db"},
+    {file = "pytest_mypy-0.10.3-py3-none-any.whl", hash = "sha256:7638d0d3906848fc1810cb2f5cc7fceb4cc5c98524aafcac58f28620e3102053"},
 ]
 
 [package.dependencies]
@@ -1012,4 +1012,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1dca350383dcba2835b58e87bdb2c24d7e4897d269f7657ddb350b27dd1fda71"
+content-hash = "5a6e98e45459c24d9fafbf34641c0d0c47b9e2ebd6302120f3f1e52131ff42a3"

@@ -701,13 +701,13 @@ pytest = {version = ">=6.2", markers = "python_version >= \"3.10\""}
 
 [[package]]
 name = "pytest-pydocstyle"
-version = "2.3.1"
+version = "2.3.2"
 description = "pytest plugin to run pydocstyle"
 category = "dev"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "pytest-pydocstyle-2.3.1.tar.gz", hash = "sha256:58228aef833dc4ed0a3a3216ebc8586f9798c7d0a98832eaf70a17269f773d4e"},
+    {file = "pytest-pydocstyle-2.3.2.tar.gz", hash = "sha256:a30b28d49607b2fcd7b24678ab6c4e27a288710a34b3a0f1f90f3497e88771c3"},
 ]
 
 [package.dependencies]
@@ -1024,4 +1024,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "8cacafbb14fa63e75a9a846cfdcced4c5f1eb992f51b02723c0f5d992ad59dfc"
+content-hash = "4a90e57a3ae45ebe6cf1820a7c8fc3bab2b6e44231d0400a45f5dec4e67ebf82"

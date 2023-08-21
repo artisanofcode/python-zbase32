@@ -15,8 +15,8 @@ files = [
 lazy-object-proxy = ">=1.4.0"
 typing-extensions = {version = ">=4.0.0", markers = "python_version < \"3.11\""}
 wrapt = [
-    {version = ">=1.11,<2", markers = "python_version < \"3.11\""},
     {version = ">=1.14,<2", markers = "python_version >= \"3.11\""},
+    {version = ">=1.11,<2", markers = "python_version < \"3.11\""},
 ]
 
 [[package]]
@@ -672,8 +672,8 @@ files = [
 astroid = ">=2.15.6,<=2.17.0-dev0"
 colorama = {version = ">=0.4.5", markers = "sys_platform == \"win32\""}
 dill = [
-    {version = ">=0.2", markers = "python_version < \"3.11\""},
     {version = ">=0.3.6", markers = "python_version >= \"3.11\""},
+    {version = ">=0.2", markers = "python_version < \"3.11\""},
 ]
 isort = ">=4.2.5,<6"
 mccabe = ">=0.6,<0.8"
@@ -740,8 +740,8 @@ files = [
 attrs = ">=19.0"
 filelock = ">=3.0"
 mypy = [
-    {version = ">=0.780", markers = "python_version >= \"3.9\" and python_version < \"3.11\""},
     {version = ">=0.900", markers = "python_version >= \"3.11\""},
+    {version = ">=0.780", markers = "python_version >= \"3.9\" and python_version < \"3.11\""},
 ]
 pytest = {version = ">=6.2", markers = "python_version >= \"3.10\""}
 
@@ -932,13 +932,13 @@ files = [
 
 [[package]]
 name = "typeguard"
-version = "4.1.0"
+version = "4.1.2"
 description = "Run-time type checker for Python"
 optional = false
 python-versions = ">=3.7.4"
 files = [
-    {file = "typeguard-4.1.0-py3-none-any.whl", hash = "sha256:94a8a8974eca6b980c0fd05a032f283914426ad9f2958b342075358e2744226a"},
-    {file = "typeguard-4.1.0.tar.gz", hash = "sha256:b05a54bb0276eefd28880df42e004a71e699c8081fcb9d0536b2ceb01019f60c"},
+    {file = "typeguard-4.1.2-py3-none-any.whl", hash = "sha256:e00775920d4c91e93a0db0ed473ecda9cfaca578aed3ce0ed3ba7f3cc38eab9c"},
+    {file = "typeguard-4.1.2.tar.gz", hash = "sha256:3be187945f9ef5a9f6d7a926dfe54babb7dfd807085ce05f9a5e8735f2487990"},
 ]
 
 [package.dependencies]
@@ -1061,4 +1061,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "0e5b4e0dfde858678933c65ec3fa83da18db11c6869b741e40c00046dfe7c426"
+content-hash = "12e34eadb82b56ded1af96063213b032dd10efb73c2efd4770dd45ece0f50003"

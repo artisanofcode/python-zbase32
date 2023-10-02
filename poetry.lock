@@ -345,13 +345,13 @@ testing = ["covdefaults (>=1.2.0)", "coverage (>=4)", "pytest (>=4)", "pytest-co
 
 [[package]]
 name = "hypothesis"
-version = "6.84.0"
+version = "6.87.1"
 description = "A library for property-based testing"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "hypothesis-6.84.0-py3-none-any.whl", hash = "sha256:d91a48fd896666d9ab04590bdd840eb97c8a04db16d7dd6c79a47df8ed412a79"},
-    {file = "hypothesis-6.84.0.tar.gz", hash = "sha256:446ecc9665a23fc67a6d32bafbe4233d77fef10eb90d4ede8ab1e76474a63215"},
+    {file = "hypothesis-6.87.1-py3-none-any.whl", hash = "sha256:6b03e774d7ddddc29810e58ba4c41b5c9a894427aaf336e6400c560655a7449b"},
+    {file = "hypothesis-6.87.1.tar.gz", hash = "sha256:13615a8f7fa27d102c43ab2f92eaef519988700f3ca8129bc6340d36dec372dd"},
 ]
 
 [package.dependencies]
@@ -1061,4 +1061,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "24aaca5a8291e32f7bfb41302409d091b767224ee20212da1eb33b8d19377a2b"
+content-hash = "cf6d45708904502b68e7b87f6baca8cee7dd68928f48df87b37268c68fa187c5"

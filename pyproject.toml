@@ -16,7 +16,7 @@ python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 shed = "^2023.6.1"
-pylint = "^2.17.5"
+pylint = "^3.0.1"
 mypy = "^1.4"
 pytest = "^7.4.0"
 pytest-cov = "^4.1.0"
